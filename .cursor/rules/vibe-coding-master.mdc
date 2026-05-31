@@ -1,0 +1,28 @@
+---
+description: Require 6 vibe-coding documents before writing any code. Use them as source of truth.
+alwaysApply: true
+---
+
+# Vibe Coding — 6 Documents Before Code
+
+Before writing or modifying application code, confirm these 6 documents exist and are current. If any are missing, help the user create them first — do not guess stack, flows, schema, or build order.
+
+| # | Document | Purpose |
+|---|----------|---------|
+| 01 | PRD | What you're building and for whom |
+| 02 | TRD | Stack, tools, APIs, env vars |
+| 03 | App Flow | Every page, click, and navigation path |
+| 04 | UI/UX Brief | Visual language and interaction patterns |
+| 05 | Backend Schema | Tables, auth, RLS, relationships |
+| 06 | Implementation Plan | Phased build sequence with done criteria |
+
+## Agent behavior
+
+1. **On new projects or vague requests** — ask for the 6 docs or offer to draft them from a short conversation.
+2. **During implementation** — treat the docs as source of truth. If code conflicts with a doc, flag it and ask which to update.
+3. **Never assume** — stack, auth provider, page routes, colors, table names, or build order when docs are absent.
+4. **Reference location** — project docs live in `docs/` (see `docs/01-prd.md` through `docs/06-implementation-plan.md`).
+
+## When docs are complete
+
+Start every session with: *"Using the 6 project documents as source of truth."* Follow the Implementation Plan phase order. Do not skip Phase 1 (setup) → Phase 2 (DB) → Phase 3 (auth) → core features → polish → deploy.

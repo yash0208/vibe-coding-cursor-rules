@@ -1,0 +1,27 @@
+---
+description: Implementation Plan — phased build sequence for vibe coding projects
+globs: docs/06-implementation-plan.md,docs/**/*implementation*
+alwaysApply: false
+---
+
+# Document 06 — Implementation Plan
+
+Exact build order so foundation layers are never skipped.
+
+## Required phases
+
+1. **Setup** — project init, deps, env vars, folder structure
+2. **Database** — migrations, RLS, seed data
+3. **Auth** — signup, login, logout, protected routes
+4. **Core features** — in dependency order (one phase per major feature)
+5. **UI polish** — responsive, loading, empty, error states
+6. **Testing** — manual flows, edge cases
+7. **Deploy** — prod env, domains, final env vars
+
+Each phase needs explicit **done criteria**.
+
+## Agent rules
+
+- Complete phases in order. Do not build UI for features whose backend phase is incomplete.
+- Mark phase complete only when done criteria are met.
+- If the user jumps ahead, warn which foundation work is missing.

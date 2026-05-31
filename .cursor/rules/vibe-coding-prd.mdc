@@ -1,0 +1,26 @@
+---
+description: PRD — Product Requirements Document standards for vibe coding projects
+globs: docs/01-prd.md,docs/**/*prd*
+alwaysApply: false
+---
+
+# Document 01 — PRD
+
+The north star. Write this before design, architecture, or code.
+
+## Required sections
+
+- App name and tagline
+- Problem and who feels it
+- Core value proposition
+- Target user persona (2–3 sentences)
+- Features: Must Have / Nice to Have
+- User stories: `As a [user], I want to [action] so that [outcome]`
+- Out of scope (explicit v1 exclusions)
+- Success metrics
+
+## Agent rules
+
+- Derive TRD, App Flow, and Implementation Plan from the PRD — not the reverse.
+- When asked to build a feature not in Must Have, ask if PRD should be updated first.
+- Keep user stories testable; each maps to at least one App Flow journey.

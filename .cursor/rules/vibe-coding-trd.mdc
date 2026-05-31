@@ -1,0 +1,27 @@
+---
+description: TRD — Technical Requirements Document standards for vibe coding projects
+globs: docs/02-trd.md,docs/**/*trd*
+alwaysApply: false
+---
+
+# Document 02 — TRD
+
+Locks technical decisions so the agent stays coherent across every file.
+
+## Required sections
+
+- Frontend framework and version
+- Backend runtime / API layer
+- Database type and provider
+- Authentication method
+- Hosting and deployment targets
+- Third-party APIs (name, purpose, tier)
+- Key libraries
+- Environment variable names (not secrets)
+- Hard constraints (mobile-first, free tier only, etc.)
+
+## Agent rules
+
+- Use only the stack declared in the TRD. Do not swap frameworks mid-project without explicit approval.
+- Match folder structure and naming conventions from the TRD.
+- List every new env var in the TRD when adding integrations.

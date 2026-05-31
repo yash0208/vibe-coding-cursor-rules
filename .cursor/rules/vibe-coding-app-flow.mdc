@@ -1,0 +1,26 @@
+---
+description: App Flow — navigation and user journey standards for vibe coding projects
+globs: docs/03-app-flow.md,docs/**/*app-flow*
+alwaysApply: false
+---
+
+# Document 03 — App Flow
+
+Every page, click, and path — mapped before screens are built.
+
+## Required sections
+
+- Full pages list with routes and descriptions
+- Navigation type (navbar, sidebar, bottom tabs)
+- First screen for new visitors
+- Auth flow: signup → verify → onboarding → dashboard
+- 2–3 core user journeys (step-by-step)
+- Empty, loading, and error states
+- Modals, drawers, overlays
+- Redirect logic (after login, logout, errors)
+
+## Agent rules
+
+- Build pages as a connected product, not isolated screens.
+- Implement redirects exactly as documented.
+- When adding a route, update App Flow first unless user approves an exception.

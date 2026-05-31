@@ -1,0 +1,27 @@
+---
+description: UI/UX Design Brief standards for vibe coding projects
+globs: docs/04-ui-ux-brief.md,docs/**/*ui-ux*,**/*.{tsx,jsx,vue,css,scss}
+alwaysApply: false
+---
+
+# Document 04 — UI/UX Design Brief
+
+Visual language so the UI is consistent, not generic.
+
+## Required sections
+
+- Aesthetic direction (minimal, bold, corporate, etc.)
+- Color palette: primary, background, text, accent/CTA
+- Typography: fonts, heading/body sizes
+- Component style: border radius, shadows, flat vs elevated
+- Dark/light mode preference
+- Reference apps (e.g. Linear, Notion)
+- Key UI patterns (cards, tables, modals)
+- Mobile responsiveness rules
+- Accessibility (contrast, font size)
+
+## Agent rules
+
+- Store colors in the project colors file; font sizes in the design tokens file.
+- All user-facing text goes in i18n/arb files (English + French when applicable).
+- Match the brief across every screen — no one-off styling without approval.

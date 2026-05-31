@@ -1,0 +1,27 @@
+---
+description: Backend Schema — data model and auth architecture for vibe coding projects
+globs: docs/05-backend-schema.md,docs/**/*schema*,**/*migration*,**/supabase/**
+alwaysApply: false
+---
+
+# Document 05 — Backend Schema
+
+Define data structure before migrations or API routes.
+
+## Required sections
+
+- All tables: columns, types, PKs, FKs
+- Indexes for fast lookup columns
+- Auth model and provider
+- Row Level Security rules
+- User roles and permissions
+- Sensitive fields (encryption or external storage)
+- File/media storage paths
+- Webhooks or event triggers (optional)
+- API endpoint list (optional)
+
+## Agent rules
+
+- Write migrations from this schema — do not invent tables at runtime.
+- Every user-owned row must have RLS aligned with the doc.
+- Payment and secrets live in third-party services, not plain DB columns.
