@@ -1,6 +1,6 @@
 # LinkedIn Post Draft
 
-Copy-paste ready. Replace `[REPO_URL]` with your GitHub repo link after publishing.
+Copy-paste ready.
 
 ---
 
@@ -28,7 +28,7 @@ Think of it as the Day 1 briefing you'd give a senior dev — except your "dev" 
 
 Result: fewer hallucinations, less back-and-forth, cleaner architecture, faster shipping.
 
-📦 Free repo (rules + templates): [REPO_URL]
+📦 Free repo (rules + templates): https://github.com/yash0208/vibe-coding-cursor-rules
 
 If you're building with AI in 2026, this is the highest-ROI 20 minutes you'll spend all week.
 
@@ -47,7 +47,7 @@ AI won't read your mind — but it will read your docs.
 PRD → TRD → App Flow → UI/UX → Schema → Implementation Plan
 
 I turned this into free Cursor rules + templates:
-[REPO_URL]
+https://github.com/yash0208/vibe-coding-cursor-rules
 
 Paste them. Fill them. Ship faster.
 
