@@ -2,3 +2,4 @@
 .cursor/docusor/
 *.env
 *.env.local
+LINKEDIN_POST.md
